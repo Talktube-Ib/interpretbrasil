@@ -44,5 +44,210 @@
         "services": "Services",
         "contact": "Contact",
         "rights": "All rights reserved."
+    },
+    "about_us": {
+        "subtitle": "About Us",
+        "title": "Connecting people, languages and cultures.",
+        "title_part1": "Connecting people,",
+        "title_part2": "languages and cultures.",
+        "intro_1": "What happens when renowned interpreters and translators join forces to bring ideas and people closer around the world? Success. Thanks to a team of professionals with over 20 years of experience, Interpret Brasil is your best choice for simple and sworn translation services for texts, and simultaneous interpretation for meetings and events.",
+        "intro_2": "More than a company, we are your communication bridge with thousands of people, uniting you with new languages and cultures. Come to Interpret!",
+        "partners": {
+            "lynnea": {
+                "role": "Founding Partner",
+                "role_1": "Translator and Conference Interpreter",
+                "role_2": "Graduated in International Relations from New York University",
+                "role_3": "Interpreter accredited by the US Department of State"
+            },
+            "douglas": {
+                "role": "Founding Partner",
+                "role_1": "Sworn Translator and Conference Interpreter",
+                "role_2": "Graduated in Letters from Federal Fluminense University",
+                "role_3": "Translator and Interpreter affiliated with JUCERJA, Sintra, ATA and others."
+            }
+        },
+        "collective": {
+            "title": "We are not an agency",
+            "text": "Interpret Brasil is not a translation agency. We are a collective of professional translators and interpreters, and, based on the principles of the collaborative economy, we manage to deliver excellence results at a fair price.",
+            "feat_1_title": "Excellence",
+            "feat_1_text": "Impeccable quality guaranteed by experienced professionals.",
+            "feat_2_title": "Collective",
+            "feat_2_text": "Direct action without unnecessary intermediaries.",
+            "feat_3_title": "Global",
+            "feat_3_text": "We serve throughout Brazil and abroad.",
+            "cta": "Let's work together?"
+        }
+    },
+    "services_data": {
+        "traducao-simultanea": {
+            "title": "Simultaneous Translation",
+            "subtitle": "The voice of your event in real time.",
+            "description": [
+                "Simultaneous Translation, also known as Simultaneous Interpretation, is the service of oral translation performed immediately after the speaker's speech, without interruption.",
+                "The speaker, trainer or other type of speaker speaks alongside the interpreter who translates this speech a few moments later, without interrupting the speaker.",
+                "In most cases, simultaneous translation is performed with translation equipment so that the interpreter does not interfere with the speaker's speech. Common equipment includes transmitters, receivers and translation booths.",
+                "We are a group of professional interpreters acting on the principles of the collaborative economy with excellent results for over 20 years. We work in a network with a group of interpreters with thousands of hours of booth experience, in addition to providing state-of-the-art simultaneous translation equipment."
+            ],
+            "features": [
+                "Simultaneous Translation with Full Booth or Half-Booth.",
+                "Simultaneous Translation with Mini-Portable Equipment.",
+                "Whispering Translation for small groups.",
+                "Experienced interpreters with thousands of booth hours.",
+                "Service throughout Brazil and abroad (bases in SP, RJ and NY)."
+            ]
+        },
+        "traducao-consecutiva": {
+            "title": "Consecutive Translation",
+            "subtitle": "Precision for negotiations, meetings and audits.",
+            "description": [
+                "Consecutive translation is the modality of oral translation in which the speaker speaks for a few moments, usually short intervals, and interrupts their exposition so that the interpreter can translate the spoken excerpt.",
+                "This modality does not require complex translation equipment. Speaker and interpreter will use only existing sound equipment (in medium/large events) or no equipment (in small meetings).",
+                "We work with consecutive translation for accompaniments, visits, meetings, market research, press conferences, presentations in general, audits and others.",
+                "We operate throughout Brazil from our bases located in Rio de Janeiro, São Paulo and the Ribeirão Preto region, in addition to acting in the United States from our New York base."
+            ],
+            "features": [
+                "Ideal for small meetings, dinners and interviews.",
+                "Accompaniment of technical visits and audits.",
+                "Does not require booths or complex equipment.",
+                "Greater personal interaction between parties.",
+                "Interpreters with excellent memory and note-taking technique."
+            ]
+        },
+        "traducao-juramentada": {
+            "title": "Sworn Translation",
+            "subtitle": "Legal validity and public faith for your documents.",
+            "description": [
+                "Sworn Translation (or Public) is performed by a Public Translator and Commercial Interpreter, duly examined and registered with the Commercial Board of their state.",
+                "This type of translation has public faith and is legally required for documents in a foreign language to be valid in Brazil (in public offices, courts, etc.) and for Brazilian documents to be accepted abroad.",
+                "We serve both companies (law firms, accounting, insurance, dispatchers, maritime transport) and individuals (school transcripts, diplomas, driver's licenses, certificates, probate documents).",
+                "Interpret Brasil has a network of partner sworn translators in several languages, ready to meet your needs with rigor and agility."
+            ],
+            "features": [
+                "Translation of Contracts, Certificates and Official Documents.",
+                "Validity throughout the national territory and abroad.",
+                "Strict compliance with the Commercial Board's Fee Table.",
+                "Urgency deadlines available.",
+                "Digital delivery with electronic or physical signature."
+            ]
+        },
+        "traducao-simples": {
+            "title": "Simple Translation",
+            "subtitle": "Agility and precision for general and corporate texts.",
+            "description": [
+                "Simple (or free) translation is indicated for documents that do not require public faith, such as informative texts, websites, corporate presentations, monographs, marketing material and correspondence.",
+                "Although it does not have official legal validity, we maintain the same technical and grammatical rigor of all our translations.",
+                "Ideal for internal communication, management reports and dissemination materials."
+            ],
+            "features": [
+                "Ideal for non-official documents.",
+                "Formatting flexibility.",
+                "Reduced cost compared to sworn translation.",
+                "Agile delivery in editable formats (Word, Excel)."
+            ]
+        },
+        "equipamentos-para-traducao-simultanea": {
+            "title": "Translation Equipment",
+            "subtitle": "Complete audio and video solutions for your event.",
+            "description": [
+                "We offer complete solutions in simultaneous translation equipment for your event, from a small meeting to an international congress with thousands of people.",
+                "We have simultaneous translation booths of international standard (ISO), high-fidelity and low-interference FM/Infrared transmitters and receivers.",
+                "We have a specialized technical team that assembles, operates and disassembles the entire system, ensuring total tranquility for the organizers.",
+                "We work with leading brands such as Williams Sound, Behringer, Sennheiser and Yamaha."
+            ],
+            "features": [
+                "Complete Acoustic Booths (ISO Standard) and Half-Booths.",
+                "FM/Infrared Receivers and Transmitters.",
+                "Digital Interpreter Consoles.",
+                "Complete sound capability (Speakers, Microphones, Sound Mixers).",
+                "Specialized technicians present during the entire event."
+            ]
+        },
+        "traducao-tecnica": {
+            "title": "Technical Translation",
+            "subtitle": "Precise terminology for specialized industries.",
+            "description": [
+                "Interpret Brasil works with technical translation for various companies and institutions. Our professionals have already translated millions of words in areas such as oil and gas, mining, engineering, technology, finance and accounting.",
+                "A peculiarity of our translators is that everyone also acts as interpreters in technical events, always keeping up to date with cutting-edge terminology.",
+                "We use translation memory tools to ensure consistency, agility and cost reduction for recurring projects.",
+                "Translation of manuals, projects, technical specifications, reports, websites and much more."
+            ],
+            "features": [
+                "Specialists in Oil & Gas, Engineering, IT and Finance.",
+                "Use of Translation Memories for consistency.",
+                "Management of exclusive glossaries per client.",
+                "Translators who are also subject matter experts.",
+                "Absolute confidentiality and industrial data protection."
+            ]
+        },
+        "traducao-juridica": {
+            "title": "Legal Translation",
+            "subtitle": "Security and legal precision in every word.",
+            "description": [
+                "Our professionals have already translated millions of words in legal areas such as civil, labor, criminal and tax, serving large law firms and legal departments.",
+                "Legal translation requires not only fluency, but deep knowledge of the source and target legal systems (Common Law vs Civil Law) to make the appropriate adaptations and explanatory notes.",
+                "Translation of contracts, procedural documents, letters rogatory, wills, powers of attorney and corporate documents.",
+                "We have a standardized quality management method with cross-checks to ensure maximum legal accuracy."
+            ],
+            "features": [
+                "Translators with a Law degree or extensive experience in the area.",
+                "Adaptation between legal systems (Civil Law / Common Law).",
+                "Absolute confidentiality and non-disclosure agreements (NDA).",
+                "Terminological and formal rigor.",
+                "Service to large law firms and legal departments."
+            ]
+        },
+        "traducao-medica-e-farmaceutica": {
+            "title": "Medical and Pharmaceutical Translation",
+            "subtitle": "Scientific precision that preserves lives.",
+            "description": [
+                "Translation in the health area does not admit errors. We rely on translators specialized in medicine, pharmacy and biotechnology.",
+                "We translate package inserts, clinical study reports, medical equipment manuals, scientific articles, reports and medical records.",
+                "Our professionals are familiar with standard medical terminology (MedDRA, WHO) and regulatory standards (Anvisa, FDA, EMA).",
+                "We guarantee scientific rigor and clarity in communication, essential for regulatory approvals and patient safety."
+            ],
+            "features": [
+                "Specialists in Medicine, Pharmacy and Life Sciences.",
+                "Knowledge of regulatory standards (Anvisa, FDA).",
+                "Translation of Clinical Studies and Package Inserts.",
+                "Terminological and scientific rigor.",
+                "Technical review by professionals in the area."
+            ]
+        },
+        "interpretacao-remota": {
+            "title": "Remote Interpretation (RSI)",
+            "subtitle": "Connect the world without leaving the office.",
+            "description": [
+                "With Remote Simultaneous Interpretation (RSI), your online events gain global reach. Ideal for webinars, virtual meetings and hybrid events.",
+                "We integrate with Zoom, Teams, Google Meet, Webex and proprietary platforms (Kudo, Interprefy, VoiceBoxer) to deliver crystal clear translated audio.",
+                "We offer complete technical support to ensure that the connection and audio work perfectly for speakers, interpreters and participants.",
+                "Significant reduction in logistical costs (travel, accommodation) while maintaining communication quality."
+            ],
+            "features": [
+                "Compatible with Zoom, Teams, Meet and other platforms.",
+                "Interpretation hubs with redundant connection.",
+                "Specialized technical support during the event.",
+                "Recording of audio channels available.",
+                "Cost savings and geographical flexibility."
+            ]
+        },
+        "talktube": {
+            "title": "TalkTube",
+            "subtitle": "Your multilingual meeting with human simultaneous interpretation in any language.",
+            "description": [
+                "TalkTube is a complete video conference suite that runs 100% in the browser (no downloads), equipped with dedicated audio channels for simultaneous interpretation.",
+                "Unlike common platforms, it was designed specifically for multilingual events, allowing participants to choose their language (PT, EN, ES) with one click.",
+                "Real Audio Channels: Participants switch between original audio and translation without workarounds.",
+                "P2P Technology: Low latency and HD video.",
+                "Bilingual Recording: The system records video and delivers separate audio tracks for each language automatically.",
+                "Accessibility: Works on slower connections (3G/4G) automatically adjusting quality."
+            ],
+            "features": [
+                "HD Video & Screen Sharing.",
+                "Dedicated Interpreter Console with Handover.",
+                "Room Management (Lobby, Mute, Kick).",
+                "No Installation (Runs on Chrome, Edge, Safari, Firefox).",
+                "White Label / Enterprise (Customization available)."
+            ]
+        }
     }
 }

@@ -1,0 +1,48 @@
+{
+    "header": {
+        "about": "About Interpret Brasil",
+        "services": "Services",
+        "services_simultaneous": "Simultaneous Translation",
+        "services_consecutive": "Consecutive Translation",
+        "services_remote": "Remote Interpretation",
+        "services_sworn": "Sworn Translation",
+        "services_simple": "Simple Translation",
+        "services_medical": "Medical Translation",
+        "services_technical": "Technical Translation",
+        "services_equipment": "Equipment",
+        "news": "News & Articles",
+        "contact": "Contact",
+        "cta": "Request Quote"
+    },
+    "hero": {
+        "experience": "Over 20 years of global experience",
+        "title_main": "Connecting voices,",
+        "title_sub": "globalizing ideas.",
+        "description": "Leaders in simultaneous translation and interpretation for corporate, governmental, and online events. Your message, understood in any language.",
+        "cta_primary": "Request Quote",
+        "cta_secondary": "Our Services"
+    },
+    "why_choose_us": {
+        "title": "Why choose Interpret Brasil?",
+        "subtitle": "Differentials",
+        "expertise_title": "Global Expertise",
+        "expertise_text": "We work with simultaneous or consecutive translation, as well as sworn and technical translations anywhere in Brazil and the world. Our team accumulates thousands of hours of experience in events and millions of words translated.",
+        "agency_title": "We are not an agency",
+        "agency_text": "We are a collective of professional translators and interpreters. Based on the principles of the collaborative economy, we manage to deliver excellence results at a fair price, without unnecessary intermediaries.",
+        "years_title": "Over 20 years of Experience",
+        "years_text": "We have worked for the largest Brazilian and foreign companies, in national and international events, with heads of state and large corporations. It is in our DNA to establish long-term partnerships."
+    },
+    "stats": {
+        "years": "Years Exp.",
+        "events": "Events",
+        "translations": "Translations"
+    },
+    "footer": {
+        "about_us": "About Interpret Brasil",
+        "about_text": "Connecting cultures and businesses through precise communication.",
+        "quick_links": "Quick Links",
+        "services": "Services",
+        "contact": "Contact",
+        "rights": "All rights reserved."
+    }
+}

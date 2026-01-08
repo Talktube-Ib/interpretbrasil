@@ -1,0 +1,253 @@
+{
+  "header": {
+    "about": "A Interpret Brasil",
+    "services": "Serviços",
+    "services_simultaneous": "Tradução Simultânea",
+    "services_consecutive": "Tradução Consecutiva",
+    "services_remote": "Interpretação Remota",
+    "services_sworn": "Tradução Juramentada",
+    "services_simple": "Tradução Simples",
+    "services_medical": "Tradução Médica",
+    "services_technical": "Tradução Técnica",
+    "services_equipment": "Equipamentos",
+    "news": "Notícias e Artigos",
+    "contact": "Contato",
+    "cta": "Solicitar Orçamento"
+  },
+  "hero": {
+    "experience": "Mais de 20 anos de experiência global",
+    "title_main": "Conectando vozes,",
+    "title_sub": "globalizando ideias.",
+    "description": "Líderes em tradução simultânea e interpretação para eventos corporativos, governamentais e online. Sua mensagem, compreendida em qualquer idioma.",
+    "cta_primary": "Solicitar Orçamento",
+    "cta_secondary": "Nossos Serviços"
+  },
+  "why_choose_us": {
+    "title": "Por que escolher a Interpret Brasil?",
+    "subtitle": "Diferenciais",
+    "expertise_title": "Expertise Global",
+    "expertise_text": "Trabalhamos com tradução simultânea ou consecutiva, bem como traduções juramentadas e técnicas em qualquer parte do Brasil e do mundo. Nossa equipe acumula milhares de horas de experiência em eventos e milhões de palavras traduzidas.",
+    "agency_title": "Não somos agência",
+    "agency_text": "Somos um coletivo de tradutores e intérpretes profissionais. Baseados nos princípios da economia colaborativa, conseguimos entregar resultados de excelência a um preço justo, sem intermediários desnecessários.",
+    "years_title": "Mais de 20 anos de Experiência",
+    "years_text": "Temos trabalhado para as maiores empresas brasileiras e estrangeiras, em eventos nacionais e internacionais, com chefes de estado e grandes corporações. Está em nosso DNA estabelecer parcerias de longo prazo."
+  },
+  "stats": {
+    "years": "Anos de Exp.",
+    "events": "Eventos",
+    "translations": "Traduções"
+  },
+  "footer": {
+    "about_us": "A Interpret Brasil",
+    "about_text": "Conectando culturas e negócios através da comunicação precisa.",
+    "quick_links": "Links Rápidos",
+    "services": "Serviços",
+    "contact": "Contato",
+    "rights": "Todos os direitos reservados."
+  },
+  "about_us": {
+    "subtitle": "Sobre Nós",
+    "title": "Conectando pessoas, idiomas e culturas.",
+    "title_part1": "Conectando pessoas,",
+    "title_part2": "idiomas e culturas.",
+    "intro_1": "O que acontece quando intérpretes e tradutores renomados unem forças para aproximar ideias e pessoas ao redor mundo? Sucesso. Graças a uma equipe de profissionais com mais de 20 anos de experiência, a Interpret Brasil é a sua melhor escolha para serviços de tradução simples e juramentada para textos, e interpretação simultânea para reuniões e eventos.",
+    "intro_2": "Mais que uma empresa, somos a sua ponte de comunicação com milhares de pessoas, unindo você a novos idiomas e culturas. Venha para a Interpret!",
+    "partners": {
+      "lynnea": {
+        "role": "Sócia Fundadora",
+        "role_1": "Tradutora e Intérprete de Conferência",
+        "role_2": "Graduada em Relações Internacionais pela Universidade de Nova Iorque",
+        "role_3": "Intérprete credenciada pelo Departamento de Estados Norte Americano"
+      },
+      "douglas": {
+        "role": "Sócio Fundador",
+        "role_1": "Tradutor Juramentado e Intérprete de Conferência",
+        "role_2": "Graduado em Letras pela Universidade Federal Fluminense",
+        "role_3": "Tradutor e Intérprete filiado à JUCERJA, Sintra, ATA e outras."
+      }
+    },
+    "collective": {
+      "title": "Não somos uma agência",
+      "text": "A Interpret Brasil não é uma agência de tradução. Somos um coletivo de tradutores e intérpretes profissionais, e, baseados nos princípios da economia colaborativa, conseguimos entregar resultados de excelência a um preço justo.",
+      "feat_1_title": "Excelência",
+      "feat_1_text": "Qualidade impecável garantida por profissionais experientes.",
+      "feat_2_title": "Coletivo",
+      "feat_2_text": "Atuação direta sem intermediários desnecessários.",
+      "feat_3_title": "Global",
+      "feat_3_text": "Atendemos em todo o Brasil e no exterior.",
+      "cta": "Vamos trabalhar juntos?"
+    }
+  },
+  "services_data": {
+    "traducao-simultanea": {
+      "title": "Tradução Simultânea",
+      "subtitle": "A voz do seu evento em tempo real.",
+      "description": [
+        "A Tradução Simultânea, também conhecida por Interpretação Simultânea, é o serviço de tradução oral realizada imediatamente após fala do orador, sem interrupção.",
+        "O palestrante, treinador ou outro tipo de orador profere sua fala em um idioma qualquer e o intérprete traduz esta fala alguns poucos instantes depois, sem interromper o orador.",
+        "Na maioria dos casos, a tradução simultânea é realizada com equipamentos de tradução para que o intérprete não interfira na fala do orador. Entre os equipamentos mais comuns estão rádios transmissores e receptores e cabines de tradução.",
+        "Somos um grupo de intérpretes profissionais atuando nos princípios da economia colaborativa com resultados de excelência há mais de 20 anos. Atuamos em rede com um grupo de intérpretes com milhares de horas de experiência em cabine, além de fornecermos também equipamentos para tradução simultânea de última geração."
+      ],
+      "features": [
+        "Tradução Simultânea com Cabine Completa ou Meia-Cabine.",
+        "Tradução Simultânea com Mini-Equipamentos Portáteis.",
+        "Tradução de Cochicho (Whispering) para pequenos grupos.",
+        "Intérpretes experientes com milhares de horas de cabine.",
+        "Atendimento em todo o Brasil e no exterior (bases em SP, RJ e NY)."
+      ]
+    },
+    "traducao-consecutiva": {
+      "title": "Tradução Consecutiva",
+      "subtitle": "Precisão para negociações, reuniões e auditorias.",
+      "description": [
+        "A tradução consecutiva é a modalidade de tradução oral em que o orador fala por alguns instantes, geralmente intervalos curtos, e interrompe sua exposição para que o intérprete possa traduzir o trecho proferido.",
+        "Esta modalidade não requer equipamentos de tradução complexos. Orador e intérprete utilizarão somente os equipamentos de sonorização existentes (em eventos médios/grandes) ou nenhum equipamento (em pequenas reuniões).",
+        "Trabalhamos com tradução consecutiva para acompanhamentos, visitas, reuniões, pesquisa de mercado, coletivas de imprensa, apresentações em geral, auditorias e outros.",
+        "Atuamos em todo o Brasil a partir de nossas bases situadas no Rio de Janeiro, em São Paulo e na região de Ribeirão Preto, além de atuar nos Estados Unidos a partir de nossa base de Nova York."
+      ],
+      "features": [
+        "Ideal para pequenas reuniões, jantares e entrevistas.",
+        "Acompanhamento de visitas técnicas e auditorias.",
+        "Não necessita de cabines ou equipamentos complexos.",
+        "Maior interação pessoal entre as partes.",
+        "Intérpretes com excelente memória e técnica de anotação."
+      ]
+    },
+    "traducao-juramentada": {
+      "title": "Tradução Juramentada",
+      "subtitle": "Validade legal e fé pública para seus documentos.",
+      "description": [
+        "A Tradução Juramentada (ou Pública) é realizada por um Tradutor Público e Intérprete Comercial, devidamente concursado e registrado na Junta Comercial de seu estado.",
+        "Este tipo de tradução tem fé pública e é exigido legalmente para que documentos em língua estrangeira tenham validade no Brasil (em repartições públicas, justiça, etc.) e para que documentos brasileiros sejam aceitos no exterior.",
+        "Atendemos tanto empresas (escritórios de advocacia, contabilidade, seguradoras, despachantes, transporte marítimo) quanto pessoas físicas (históricos escolares, diplomas, carteiras de habilitação, certidões, documentos para inventário).",
+        "A Interpret Brasil conta com uma rede de tradutores juramentados parceiros em diversos idiomas, prontos para atender suas necessidades com rigor e agilidade."
+      ],
+      "features": [
+        "Tradução de Contratos, Certidões e Documentos Oficiais.",
+        "Validade em todo o território nacional e no exterior.",
+        "Rigoroso cumprimento da Tabela de Emolumentos da Junta Comercial.",
+        "Prazos de urgência disponíveis.",
+        "Entrega digital com assinatura eletrônica ou física."
+      ]
+    },
+    "traducao-simples": {
+      "title": "Tradução Simples",
+      "subtitle": "Agilidade e precisão para textos gerais e corporativos.",
+      "description": [
+        "A tradução simples (ou livre) é indicada para documentos que não requerem fé pública, como textos informativos, sites, apresentações corporativas, monografias, material de marketing e correspondências.",
+        "Embora não tenha validade jurídica oficial, mantemos o mesmo rigor técnico e gramatical de todas as nossas traduções.",
+        "Ideal para comunicação interna, relatórios gerenciais e materiais de divulgação."
+      ],
+      "features": [
+        "Ideal para documentos não-oficiais.",
+        "Flexibilidade de formatação.",
+        "Custo reduzido em relação à juramentada.",
+        "Entrega ágil em formatos editáveis (Word, Excel)."
+      ]
+    },
+    "equipamentos-para-traducao-simultanea": {
+      "title": "Equipamentos de Tradução",
+      "subtitle": "Soluções completas de áudio e vídeo para seu evento.",
+      "description": [
+        "Oferecemos soluções completas em equipamentos para tradução simultânea do seu evento, desde uma pequena reunião até um congresso internacional com milhares de pessoas.",
+        "Temos cabines de tradução simultânea de padrão internacional (ISO), transmissores e receptores FM/Infravermelho de alta fidelidade e baixa interferência.",
+        "Contamos com equipe técnica especializada que monta, opera e desmonta todo o sistema, garantindo tranquilidade total para os organizadores.",
+        "Trabalhamos com marcas de ponta como Williams Sound, Behringer, Sennheiser e Yamaha."
+      ],
+      "features": [
+        "Cabines Acústicas Completas (Padrão ISO) e Meias-Cabines.",
+        "Receptores e Transmissores FM/Infravermelho.",
+        "Centrais de Intérprete Digitais.",
+        "Sonorização completa (Caixas, Microfones, Mesas de Som).",
+        "Técnicos especializados presentes durante todo o evento."
+      ]
+    },
+    "traducao-tecnica": {
+      "title": "Tradução Técnica",
+      "subtitle": "Terminologia precisa para indústrias especializadas.",
+      "description": [
+        "A Interpret Brasil atua com tradução técnica para diversas empresas e instituições. Nossos profissionais já traduziram milhões de palavras em áreas como petróleo e gás, mineração, engenharia, tecnologia, finanças e contabilidade.",
+        "Uma particularidade dos nossos tradutores é que todos atuam também como intérpretes em eventos técnicos, mantendo-se sempre atualizados com a terminologia de ponta.",
+        "Utilizamos ferramentas de memória de tradução para garantir consistência terminológica, agilidade e redução de custos para projetos recorrentes.",
+        "Tradução de manuais, projetos, especificações técnicas, relatórios, websites e muito mais."
+      ],
+      "features": [
+        "Especialistas em Oil & Gas, Engenharia, IT e Finanças.",
+        "Uso de Memórias de Tradução para consistência.",
+        "Gestão de glossários exclusivos por cliente.",
+        "Tradutores que também são especialistas no assunto.",
+        "Sigilo absoluto e proteção de dados industriais."
+      ]
+    },
+    "traducao-juridica": {
+      "title": "Tradução Jurídica",
+      "subtitle": "Segurança e precisão legal em cada palavra.",
+      "description": [
+        "Nossos profissionais já traduziram milhões de palavras em áreas jurídicas como civil, trabalhista, criminal e tributário, atendendo grandes bancas de advogados e departamentos jurídicos.",
+        "A tradução jurídica exige não apenas fluência, mas conhecimento profundo dos sistemas legais de origem e destino (Common Law vs Civil Law) para fazer as devidas adaptações e notas explicativas.",
+        "Tradução de contratos, peças processuais, cartas rogatórias, testamentos, procurações e documentos societários.",
+        "Possuímos método padronizado de gestão da qualidade com verificações cruzadas para garantir a máxima precisão legal."
+      ],
+      "features": [
+        "Tradutores com formação em Direito ou ampla experiência na área.",
+        "Adaptação entre sistemas jurídicos (Civil Law / Common Law).",
+        "Sigilo absoluto e contratos de confidencialidade (NDA).",
+        "Rigor terminológico e formal.",
+        "Atendimento a grandes escritórios e departamentos jurídicos."
+      ]
+    },
+    "traducao-medica-e-farmaceutica": {
+      "title": "Tradução Médica e Farmacêutica",
+      "subtitle": "Precisão científica que preserva vidas.",
+      "description": [
+        "A tradução na área da saúde não admite erros. Contamos com tradutores especializados em medicina, farmácia e biotecnologia.",
+        "Traduzimos bulas, relatórios de estudos clínicos, manuais de equipamentos médicos, artigos científicos, laudos e prontuários.",
+        "Nossos profissionais estão familiarizados com a terminologia médica padrão (MedDRA, OMS) e normas regulatórias (Anvisa, FDA, EMA).",
+        "Garantimos rigor científico e clareza na comunicação, essencial para aprovações regulatórias e segurança do paciente."
+      ],
+      "features": [
+        "Especialistas em Medicina, Farmácia e Ciências da Vida.",
+        "Conhecimento de normas regulatórias (Anvisa, FDA).",
+        "Tradução de Estudos Clínicos e Bulas.",
+        "Rigor terminológico e científico.",
+        "Revisão técnica por profissionais da área."
+      ]
+    },
+    "interpretacao-remota": {
+      "title": "Interpretação Remota (RSI)",
+      "subtitle": "Conecte o mundo sem sair do escritório.",
+      "description": [
+        "Com a Interpretação Simultânea Remota (RSI), seus eventos online ganham alcance global. Ideal para webinars, reuniões virtuais e eventos híbridos.",
+        "Integramos com Zoom, Teams, Google Meet, Webex e plataformas proprietárias (Kudo, Interprefy, VoiceBoxer) para entregar áudio traduzido cristalino.",
+        "Oferecemos suporte técnico completo para garantir que a conexão e o áudio funcionem perfeitamente para palestrantes, intérpretes e participantes.",
+        "Redução significativa de custos logísticos (viagens, hospedagem) mantendo a qualidade da comunicação."
+      ],
+      "features": [
+        "Compatível com Zoom, Teams, Meet e outras plataformas.",
+        "Hubs de interpretação com conexão redundante.",
+        "Suporte técnico especializado durante o evento.",
+        "Gravação dos canais de áudio disponível.",
+        "Economia de custos e flexibilidade geográfica."
+      ]
+    },
+    "talktube": {
+      "title": "TalkTube",
+      "subtitle": "Sua reunião multilíngue com interpretação simultânea humana em qualquer idioma.",
+      "description": [
+        "O TalkTube é uma suíte completa de videoconferência que roda 100% no navegador (sem downloads), equipada com canais de áudio dedicados para interpretação simultânea.",
+        "Diferente de plataformas comuns, ela foi desenhada especificamente para eventos multilíngues, permitindo que participantes escolham seu idioma (PT, EN, ES) com um clique.",
+        "Canais de Áudio Reais: Participantes alternam entre áudio original e tradução sem gambiarras.",
+        "Tecnologia P2P: Baixa latência e vídeos em HD.",
+        "Gravação Bilíngue: O sistema grava o vídeo e entrega faixas de áudio separadas para cada idioma automaticamente.",
+        "Acessibilidade: Funciona em conexões mais lentas (3G/4G) ajustando a qualidade automaticamente."
+      ],
+      "features": [
+        "Vídeo HD & Compartilhamento de Tela.",
+        "Console do Intérprete dedicado com Handover.",
+        "Gestão de Salas (Lobby, Mudo, Expulsão).",
+        "Sem Instalação (Roda no Chrome, Edge, Safari, Firefox).",
+        "White Label / Enterprise (Customização disponível)."
+      ]
+    }
+  }
+}

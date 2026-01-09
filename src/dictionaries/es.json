@@ -1,4 +1,14 @@
 {
+    "common": {
+        "features": "Características Principales",
+        "gallery": "Galería de Fotos",
+        "need_service": "¿Necesita este servicio?",
+        "request_quote_text": "Solicite un presupuesto ahora mismo. Nuestro equipo responderá en breve.",
+        "other_services": "Otros Servicios",
+        "read_more": "Leer Más",
+        "back": "Volver",
+        "back_to_services": "Volver a Servicios"
+    },
     "header": {
         "about": "Sobre Interpret Brasil",
         "services": "Servicios",
@@ -78,6 +88,29 @@
             "cta": "¿Trabajamos juntos?"
         }
     },
+    "contact_page": {
+        "title": "¿Hablamos de su próximo evento?",
+        "description": "Nuestro equipo está listo para ofrecer la mejor solución en traducción e interpretación. Respuesta rápida y presupuesto personalizado.",
+        "email_label": "Email",
+        "email_sub": "Atención con Sara Goulart",
+        "locations": {
+            "sp": "São Paulo / SP",
+            "rj": "Río de Janeiro / RJ",
+            "rp": "Ribeirão Preto y Región",
+            "belem": "Belém / PA"
+        },
+        "form": {
+            "title": "Enviar un mensaje",
+            "name": "Nombre",
+            "phone": "Teléfono",
+            "email": "Email",
+            "message": "Mensaje",
+            "attach": "Adjuntar Archivo (Opcional)",
+            "drop": "Haga clic para cargar o arrastre el archivo",
+            "submit": "Enviar Mensaje",
+            "sending": "Enviando..."
+        }
+    },
     "services_data": {
         "traducao-simultanea": {
             "title": "Traducción Simultánea",
@@ -134,7 +167,7 @@
             "title": "Traducción Simple",
             "subtitle": "Agilidad y precisión para textos generales y corporativos.",
             "description": [
-                "La traducción simple (o libre) está indicada para documentos que no requieren fe pública, como textos informativos, sitios web, presentaciones corporativas, monografías, material de marketing y correspondencia.",
+                "La traducción simple (o libre) está indicada para documentos que no requieren fe pública, como textos informativos, sitios web, presentaciones corporativas, monografias, material de marketing y correspondencia.",
                 "Aunque no tiene validez jurídica oficial, mantenemos el mismo rigor técnico y gramatical de todas nuestras traducciones.",
                 "Ideal para comunicación interna, informes de gestión y materiales de difusión."
             ],
@@ -150,13 +183,13 @@
             "subtitle": "Soluciones completas de audio y video para su evento.",
             "description": [
                 "Ofrecemos soluciones completas en equipos de traducción simultánea para su evento, desde una pequeña reunión hasta un congreso internacional con miles de personas.",
-                "Tenemos cabinas de traducción simultánea de estándar internacional (ISO), transmisores y receptores FM/Infrarrojos de alta fidelidad y baja interferencia.",
+                "Tenemos cabinas de traducción simultánea de estándar internacional (ISO), transmissores y receptores FM/Infrarrojos de alta fidelidad y baja interferencia.",
                 "Contamos con un equipo técnico especializado que monta, opera y desmonta todo el sistema, garantizando total tranquilidad para los organizadores.",
                 "Trabajamos con marcas líderes como Williams Sound, Behringer, Sennheiser y Yamaha."
             ],
             "features": [
                 "Cabinas Acústicas Completas (Estándar ISO) y Medias Cabinas.",
-                "Receptores y Transmisores FM/Infrarrojos.",
+                "Receptores y Transmissores FM/Infrarrojos.",
                 "Consolas de Intérprete Digitales.",
                 "Sonorización completa (Altavoces, Micrófonos, Mesas de Mezclas).",
                 "Técnicos especializados presentes durante todo el evento."
@@ -237,7 +270,7 @@
                 "TalkTube es una suite completa de videoconferencia que se ejecuta 100% en el navegador (sin descargas), equipada con canales de audio dedicados para interpretación simultánea.",
                 "A diferencia de las plataformas comunes, fue diseñada específicamente para eventos multilingües, permitiendo a los participantes elegir su idioma (PT, EN, ES) con un clic.",
                 "Canales de Audio Reales: Los participantes alternan entre el audio original y la traducción sin soluciones alternativas.",
-                "Tecnología P2P: Baja latencia y video en HD.",
+                "Tecnologia P2P: Baja latencia y video en HD.",
                 "Grabación Bilingüe: El sistema graba el video y entrega pistas de audio separadas para cada idioma automáticamente.",
                 "Accesibilidad: Funciona en conexiones más lentas (3G/4G) ajustando la calidad automáticamente."
             ],

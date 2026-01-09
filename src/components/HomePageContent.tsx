@@ -167,7 +167,7 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
                                 Solicite um orçamento hoje mesmo e garanta a melhor comunicação para o seu negócio.
                             </p>
-                            <Link href="/contato" className="btn-secondary bg-white text-primary border-white hover:bg-gray-100 hover:text-primary px-10 py-4 text-lg shadow-lg">
+                            <Link href="/contato" className="inline-block bg-white text-primary font-bold text-lg px-10 py-4 rounded-full hover:bg-gray-100 hover:scale-105 transition-all shadow-lg">
                                 Falar com um Especialista
                             </Link>
                         </AnimateIn>

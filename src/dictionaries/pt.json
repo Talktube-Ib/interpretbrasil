@@ -1,4 +1,14 @@
 {
+  "common": {
+    "features": "Principais Características",
+    "gallery": "Galeria de Fotos",
+    "need_service": "Precisa deste serviço?",
+    "request_quote_text": "Solicite um orçamento agora mesmo. Nossa equipe responderá em breve.",
+    "other_services": "Outros Serviços",
+    "read_more": "Leia Mais",
+    "back": "Voltar",
+    "back_to_services": "Voltar para Serviços"
+  },
   "header": {
     "about": "A Interpret Brasil",
     "services": "Serviços",
@@ -26,7 +36,7 @@
     "title": "Por que escolher a Interpret Brasil?",
     "subtitle": "Diferenciais",
     "expertise_title": "Expertise Global",
-    "expertise_text": "Trabalhamos com tradução simultânea ou consecutiva, bem como traduções juramentadas e técnicas em qualquer parte do Brasil e do mundo. Nossa equipe acumula milhares de horas de experiência em eventos e milhões de palavras traduzidas.",
+    "expertise_text": "Trabalhamos com tradução simultânea ou consecutiva, bem como traduções juradas e técnicas em qualquer parte do Brasil e do mundo. Nossa equipe acumula milhares de horas de experiência em eventos e milhões de palavras traduzidas.",
     "agency_title": "Não somos agência",
     "agency_text": "Somos um coletivo de tradutores e intérpretes profissionais. Baseados nos princípios da economia colaborativa, conseguimos entregar resultados de excelência a um preço justo, sem intermediários desnecessários.",
     "years_title": "Mais de 20 anos de Experiência",
@@ -78,6 +88,29 @@
       "cta": "Vamos trabalhar juntos?"
     }
   },
+  "contact_page": {
+    "title": "Vamos conversar sobre seu próximo evento?",
+    "description": "Nossa equipe está pronta para oferecer a melhor solução em tradução e interpretação. Resposta rápida e orçamento personalizado.",
+    "email_label": "Email",
+    "email_sub": "Atendimento com Sara Goulart",
+    "locations": {
+      "sp": "São Paulo / SP",
+      "rj": "Rio de Janeiro / RJ",
+      "rp": "Ribeirão Preto e Região",
+      "belem": "Belém / PA"
+    },
+    "form": {
+      "title": "Envie uma mensagem",
+      "name": "Nome",
+      "phone": "Telefone",
+      "email": "Email",
+      "message": "Mensagem",
+      "attach": "Anexar Arquivo (Opcional)",
+      "drop": "Clique para upload ou arraste o arquivo",
+      "submit": "Enviar Mensagem",
+      "sending": "Enviando..."
+    }
+  },
   "services_data": {
     "traducao-simultanea": {
       "title": "Tradução Simultânea",
@@ -100,7 +133,7 @@
       "title": "Tradução Consecutiva",
       "subtitle": "Precisão para negociações, reuniões e auditorias.",
       "description": [
-        "A tradução consecutiva é a modalidade de tradução oral em que o orador fala por alguns instantes, geralmente intervalos curtos, e interrompe sua exposição para que o intérprete possa traduzir o trecho proferido.",
+        "A tradução consecutiva é a modalidade de tradução oral em que o orador fala por alguns instantes, geralmente intervalos cortos, e interrompe sua exposição para que o intérprete possa traduzir o trecho proferido.",
         "Esta modalidade não requer equipamentos de tradução complexos. Orador e intérprete utilizarão somente os equipamentos de sonorização existentes (em eventos médios/grandes) ou nenhum equipamento (em pequenas reuniões).",
         "Trabalhamos com tradução consecutiva para acompanhamentos, visitas, reuniões, pesquisa de mercado, coletivas de imprensa, apresentações em geral, auditorias e outros.",
         "Atuamos em todo o Brasil a partir de nossas bases situadas no Rio de Janeiro, em São Paulo e na região de Ribeirão Preto, além de atuar nos Estados Unidos a partir de nossa base de Nova York."
@@ -142,7 +175,7 @@
         "Ideal para documentos não-oficiais.",
         "Flexibilidade de formatação.",
         "Custo reduzido em relação à juramentada.",
-        "Entrega ágil em formatos editáveis (Word, Excel)."
+        "Entrega ágil em formatos editables (Word, Excel)."
       ]
     },
     "equipamentos-para-traducao-simultanea": {
@@ -151,7 +184,7 @@
       "description": [
         "Oferecemos soluções completas em equipamentos para tradução simultânea do seu evento, desde uma pequena reunião até um congresso internacional com milhares de pessoas.",
         "Temos cabines de tradução simultânea de padrão internacional (ISO), transmissores e receptores FM/Infravermelho de alta fidelidade e baixa interferência.",
-        "Contamos com equipe técnica especializada que monta, opera e desmonta todo o sistema, garantindo tranquilidade total para os organizadores.",
+        "Contamos com equipe técnica especializada que monta, opera e desmonta todo el sistema, garantindo tranquilidade total para os organizadores.",
         "Trabalhamos com marcas de ponta como Williams Sound, Behringer, Sennheiser e Yamaha."
       ],
       "features": [
@@ -159,7 +192,7 @@
         "Receptores e Transmissores FM/Infravermelho.",
         "Centrais de Intérprete Digitais.",
         "Sonorização completa (Caixas, Microfones, Mesas de Som).",
-        "Técnicos especializados presentes durante todo o evento."
+        "Técnicos especializados presentes durante todo el evento."
       ]
     },
     "traducao-tecnica": {
@@ -210,7 +243,7 @@
         "Conhecimento de normas regulatórias (Anvisa, FDA).",
         "Tradução de Estudos Clínicos e Bulas.",
         "Rigor terminológico e científico.",
-        "Revisão técnica por profissionais da área."
+        "Revisión técnica por profissionais da área."
       ]
     },
     "interpretacao-remota": {

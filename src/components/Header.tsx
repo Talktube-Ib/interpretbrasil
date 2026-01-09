@@ -76,8 +76,8 @@ export default function Header() {
                                     <Link
                                         href={item.href}
                                         className={`block px-6 py-3 text-sm font-bold transition-colors flex justify-between items-center ${(item as any).highlight
-                                                ? "bg-primary text-white hover:bg-primary/90 mt-1 mb-1 mx-2 rounded-md shadow-sm border border-transparent hover:border-secondary/30"
-                                                : "text-gray-600 hover:text-secondary hover:bg-gray-50"
+                                            ? "bg-primary text-white hover:bg-primary/90 mt-1 mb-1 mx-2 rounded-md shadow-sm border border-transparent hover:border-secondary/30"
+                                            : "text-gray-600 hover:text-secondary hover:bg-gray-50"
                                             }`}
                                     >
                                         {(item as any).highlight ? (
@@ -144,6 +144,13 @@ export default function Header() {
                             className={`hover:scale-110 transition-transform ${lang === 'es' ? '' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`}
                         >
                             <img src="https://flagcdn.com/w40/es.png" alt="Español" className="w-6 h-auto rounded-sm shadow-sm" />
+                        </button>
+                        <button
+                            onClick={() => setLang('zh')}
+                            title="中文 (Chinese)"
+                            className={`hover:scale-110 transition-transform ${lang === 'zh' ? '' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`}
+                        >
+                            <img src="https://flagcdn.com/w40/cn.png" alt="中文" className="w-6 h-auto rounded-sm shadow-sm" />
                         </button>
                     </div>
                     <Link href="/contato" className="btn-primary py-2 px-6 text-xs uppercase shadow-none hover:shadow-lg">

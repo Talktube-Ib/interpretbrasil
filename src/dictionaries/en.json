@@ -1,4 +1,14 @@
 {
+    "common": {
+        "features": "Main Features",
+        "gallery": "Photo Gallery",
+        "need_service": "Need this service?",
+        "request_quote_text": "Request a quote right now. Our team will respond shortly.",
+        "other_services": "Other Services",
+        "read_more": "Read More",
+        "back": "Back",
+        "back_to_services": "Back to Services"
+    },
     "header": {
         "about": "About Interpret Brasil",
         "services": "Services",
@@ -76,6 +86,29 @@
             "feat_3_title": "Global",
             "feat_3_text": "We serve throughout Brazil and abroad.",
             "cta": "Let's work together?"
+        }
+    },
+    "contact_page": {
+        "title": "Let's talk about your next event?",
+        "description": "Our team is ready to offer the best solution in translation and interpretation. Quick response and personalized quote.",
+        "email_label": "Email",
+        "email_sub": "Service with Sara Goulart",
+        "locations": {
+            "sp": "São Paulo / SP",
+            "rj": "Rio de Janeiro / RJ",
+            "rp": "Ribeirão Preto and Region",
+            "belem": "Belém / PA"
+        },
+        "form": {
+            "title": "Send a message",
+            "name": "Name",
+            "phone": "Phone",
+            "email": "Email",
+            "message": "Message",
+            "attach": "Attach File (Optional)",
+            "drop": "Click to upload or drag file",
+            "submit": "Send Message",
+            "sending": "Sending..."
         }
     },
     "services_data": {

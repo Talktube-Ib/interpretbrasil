@@ -1,0 +1,68 @@
+"use client";
+
+import Link from "next/link";
+import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import AnimateIn from "@/components/AnimateIn";
+import ContactForm from "@/components/ContactForm";
+import { useLanguage } from "@/context/LanguageContext";
+import { notFound } from "next/navigation";
+
+interface ServiceDetailContentProps {
+    slug: string;
+}
+
+export default function ServiceDetailContent({ slug }: ServiceDetailContentProps) {
+    const { t } = useLanguage();
+
+    // Helper to get nested keys safely, or fallback
+    // Since we know the structure, we can try to cast or use simple logic
+    // We will assume the slug exists in the dictionary under services_data
+    
+    // Check if slug exists in dictionary (we can't easily check keys on client without loading the whole object? 
+    // dictionary is loaded in context. we can access it via t)
+    // Actually t() returns a string. We need to check if the key returns something valid.
+    // But better to trust the slug passed from server (which validated it against servicesData).
+    
+    // However, servicesData keys match dictionary keys.
+    
+    const title = t(`services_data.${slug}.title`);
+    const subtitle = t(`services_data.${slug}.subtitle`);
+    
+    // Description is an array. t() usually returns string.
+    // In our Dictionary type, we defined Record<string, string>.
+    // But the JSON has arrays.
+    // The current t() implementation in LanguageContext might only handle strings.
+    // Let's check LanguageContext.tsx
+    
+    // Pending check of LanguageContext.tsx. If it only returns string, arrays will be broken.
+    // I need to verify LanguageContext.tsx.
+    
+    return (
+        <div className="min-h-screen flex flex-col">
+            <main className="flex-grow pt-32 pb-24 bg-background">
+                <div className="container">
+                    <AnimateIn direction="left" className="mb-8">
+                        <Link href="/servicos" className="text-sm font-semibold text-gray-500 hover:text-primary flex items-center gap-2 transition-colors">
+                            <ArrowLeft size={16} /> {t("header.services")} {/* reused "Services" or "Back to Services"? */}
+                        </Link>
+                    </AnimateIn>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                        {/* Content */}
+                        <div className="lg:col-span-2">
+                            <AnimateIn>
+                                <span className="text-secondary font-bold tracking-wider text-sm uppercase mb-4 block">{t("header.services")}</span>
+                                <h1 className="text-4xl md:text-5xl font-bold font-heading mb-4 text-primary">{title}</h1>
+                                <p className="text-xl text-gray-500 mb-8 font-light">{subtitle}</p>
+                            </AnimateIn>
+
+                            {/* Description handling needs verification */}
+                             {/* ... */}
+                        </div>
+                         {/* ... */}
+                    </div>
+                </div>
+            </main>
+        </div>
+    );
+}

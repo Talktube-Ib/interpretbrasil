@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin, Facebook, Youtube, Twitter } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -66,7 +66,7 @@ export default function Footer() {
                         </li>
                         <li className="flex items-center gap-3">
                             <Phone className="text-secondary shrink-0" size={18} />
-                            <span>(11) 99999-9999</span>
+                            <span>+55 (11) 99868-2679</span>
                         </li>
                     </ul>
                 </div>
@@ -74,15 +74,21 @@ export default function Footer() {
                 {/* Social */}
                 <div>
                     <h4 className="text-white font-heading font-bold mb-6">Redes Sociais</h4>
-                    <div className="flex gap-4">
-                        <a href="#" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
+                    <div className="flex gap-4 flex-wrap">
+                        <a href="http://linkedin.com/company/interpret-brasil/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
                             <Linkedin size={20} />
                         </a>
-                        <a href="#" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
+                        <a href="https://www.instagram.com/interpretbrasil/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
                             <Instagram size={20} />
                         </a>
-                        <a href="#" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
+                        <a href="https://www.facebook.com/Interpret-Brasil-454351724757710/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
                             <Facebook size={20} />
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCgpANW5po_fY02uSHitX6_w" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
+                            <Youtube size={20} />
+                        </a>
+                        <a href="https://www.twitter.com/interpretbrasil" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
+                            <Twitter size={20} />
                         </a>
                     </div>
                 </div>

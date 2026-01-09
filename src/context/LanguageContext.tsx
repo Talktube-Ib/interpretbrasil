@@ -4,14 +4,16 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import pt from "@/dictionaries/pt.json";
 import en from "@/dictionaries/en.json";
 import es from "@/dictionaries/es.json";
+import zh from "@/dictionaries/zh.json";
 
 type Dictionary = typeof pt;
-type Lang = "pt" | "en" | "es";
+type Lang = "pt" | "en" | "es" | "zh";
 
 const dictionaries: Record<Lang, Dictionary> = {
     pt,
     en,
     es,
+    zh,
 };
 
 interface LanguageContextType {
@@ -29,7 +31,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     useEffect(() => {
         // Load saved language from localStorage if available
         const saved = localStorage.getItem("interpret-lang") as Lang;
-        if (saved && ["pt", "en", "es"].includes(saved)) {
+        if (saved && ["pt", "en", "es", "zh"].includes(saved)) {
             setLangState(saved);
         }
     }, []);

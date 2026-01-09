@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function WhatsAppFloat() {
     return (
         <a
-            href="https://wa.me/5521999999999" // Replace with actual number if provided, otherwise using placeholder
+            href="https://wa.me/5511998682679"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 left-6 z-50 group"

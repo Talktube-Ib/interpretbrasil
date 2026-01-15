@@ -22,7 +22,19 @@
         "services_equipment": "Equipment",
         "news": "News & Articles",
         "contact": "Contact",
-        "cta": "Request Quote"
+        "cta": "Request Quote",
+        "new": "New",
+        "talktube_desc": "Video Conference Platform with Translation"
+    },
+    "home": {
+        "services_title": "Complete Language Solutions",
+        "history_cta": "Discover Our History",
+        "cta_title": "Ready to internationalize your event?",
+        "cta_text": "Request a quote today and ensure the best communication for your business.",
+        "cta_button": "Talk to a Specialist",
+        "blog_subtitle": "Blog",
+        "blog_title": "Latest News",
+        "blog_view_all": "View all news"
     },
     "hero": {
         "experience": "Over 20 years of global experience",
@@ -53,7 +65,9 @@
         "quick_links": "Quick Links",
         "services": "Services",
         "contact": "Contact",
-        "rights": "All rights reserved."
+        "rights": "All rights reserved.",
+        "social": "Social Media",
+        "about_description": "Over 20 years of experience connecting the world through simultaneous, consecutive, and written translation. Premium quality for global events."
     },
     "about_us": {
         "subtitle": "About Us",

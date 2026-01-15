@@ -22,7 +22,19 @@
     "services_equipment": "Equipamentos",
     "news": "Notícias e Artigos",
     "contact": "Contato",
-    "cta": "Solicitar Orçamento"
+    "cta": "Solicitar Orçamento",
+    "new": "Novo",
+    "talktube_desc": "Plataforma de Videoconferência com Tradução"
+  },
+  "home": {
+    "services_title": "Soluções Completas em Idiomas",
+    "history_cta": "Conheça Nossa História",
+    "cta_title": "Pronto para internacionalizar seu evento?",
+    "cta_text": "Solicite um orçamento hoje mesmo e garanta a melhor comunicação para o seu negócio.",
+    "cta_button": "Falar com um Especialista",
+    "blog_subtitle": "Blog",
+    "blog_title": "Últimas Novidades",
+    "blog_view_all": "Ver todas as notícias"
   },
   "hero": {
     "experience": "Mais de 20 anos de experiência global",
@@ -53,7 +65,9 @@
     "quick_links": "Links Rápidos",
     "services": "Serviços",
     "contact": "Contato",
-    "rights": "Todos os direitos reservados."
+    "rights": "Todos os direitos reservados.",
+    "social": "Redes Sociais",
+    "about_description": "Mais de 20 anos de experiência conectando o mundo através da tradução simultânea, consecutiva e escrita. Qualidade premium para eventos globais."
   },
   "about_us": {
     "subtitle": "Sobre Nós",

@@ -1,13 +1,16 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin, Instagram, Linkedin, Facebook, Youtube, Twitter } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
+    const { lang, t } = useLanguage();
+
     return (
         <footer className="bg-primary text-gray-300 py-16">
             <div className="container grid grid-cols-1 md:grid-cols-4 gap-12">
                 {/* About */}
                 <div className="flex flex-col gap-4">
-                    <Link href="/" className="mb-2 inline-block">
+                    <Link href={`/${lang}`} className="mb-2 inline-block">
                         <img
                             src="/imagens/home/0_Interpret_Brasil.svg"
                             alt="Interpret Brasil"
@@ -15,33 +18,32 @@ export default function Footer() {
                         />
                     </Link>
                     <p className="text-sm leading-relaxed text-gray-400">
-                        Mais de 20 anos de experiência conectando o mundo através da tradução
-                        simultânea, consecutiva e escrita. Qualidade premium para eventos globais.
+                        {t("footer.about_description")}
                     </p>
                 </div>
 
                 {/* Services */}
                 <div>
-                    <h4 className="text-white font-heading font-bold mb-6">Serviços</h4>
+                    <h4 className="text-white font-heading font-bold mb-6">{t("footer.services")}</h4>
                     <ul className="flex flex-col gap-3 text-sm">
                         <li>
-                            <Link href="/servicos/traducao-simultanea" className="hover:text-secondary transition-colors">
-                                Tradução Simultânea
+                            <Link href={`/${lang}/servicos/traducao-simultanea`} className="hover:text-secondary transition-colors">
+                                {t("header.services_simultaneous")}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/servicos/traducao-juramentada" className="hover:text-secondary transition-colors">
-                                Tradução Juramentada
+                            <Link href={`/${lang}/servicos/traducao-juramentada`} className="hover:text-secondary transition-colors">
+                                {t("header.services_sworn")}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/servicos/interpretacao-remota" className="hover:text-secondary transition-colors">
-                                Interpretação Remota
+                            <Link href={`/${lang}/servicos/interpretacao-remota`} className="hover:text-secondary transition-colors">
+                                {t("header.services_remote")}
                             </Link>
                         </li>
                         <li>
-                            <Link href="/servicos/equipamentos-para-traducao-simultanea" className="hover:text-secondary transition-colors">
-                                Equipamentos
+                            <Link href={`/${lang}/servicos/equipamentos-para-traducao-simultanea`} className="hover:text-secondary transition-colors">
+                                {t("header.services_equipment")}
                             </Link>
                         </li>
                     </ul>
@@ -49,7 +51,7 @@ export default function Footer() {
 
                 {/* Contact */}
                 <div>
-                    <h4 className="text-white font-heading font-bold mb-6">Contato</h4>
+                    <h4 className="text-white font-heading font-bold mb-6">{t("footer.contact")}</h4>
                     <ul className="flex flex-col gap-4 text-sm">
                         <li className="flex items-start gap-3">
                             <Mail className="text-secondary shrink-0" size={18} />
@@ -73,7 +75,7 @@ export default function Footer() {
 
                 {/* Social */}
                 <div>
-                    <h4 className="text-white font-heading font-bold mb-6">Redes Sociais</h4>
+                    <h4 className="text-white font-heading font-bold mb-6">{t("footer.social")}</h4>
                     <div className="flex gap-4 flex-wrap">
                         <a href="http://linkedin.com/company/interpret-brasil/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded hover:bg-secondary hover:text-primary transition-all">
                             <Linkedin size={20} />
@@ -95,7 +97,7 @@ export default function Footer() {
             </div>
 
             <div className="container mt-12 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
-                © {new Date().getFullYear()} Interpret Brasil. Todos os direitos reservados.
+                © {new Date().getFullYear()} Interpret Brasil. {t("footer.rights")}
             </div>
         </footer>
     );

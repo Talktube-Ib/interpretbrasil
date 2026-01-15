@@ -22,7 +22,19 @@
         "services_equipment": "设备",
         "news": "新闻与文章",
         "contact": "联系我们",
-        "cta": "索取报价"
+        "cta": "索取报价",
+        "new": "新",
+        "talktube_desc": "带翻译的视频会议平台"
+    },
+    "home": {
+        "services_title": "完整的语言解决方案",
+        "history_cta": "了解我们的历史",
+        "cta_title": "准备好让您的活动国际化了吗？",
+        "cta_text": "立即索取报价，确保您的业务拥有最佳沟通。",
+        "cta_button": "与专家交谈",
+        "blog_subtitle": "博客",
+        "blog_title": "最新消息",
+        "blog_view_all": "查看所有新闻"
     },
     "hero": {
         "experience": "超过20年的全球经验",
@@ -53,7 +65,9 @@
         "quick_links": "快速链接",
         "services": "服务",
         "contact": "联系我们",
-        "rights": "版权所有。"
+        "rights": "版权所有。",
+        "social": "社交媒体",
+        "about_description": "拥有超过20年的经验，通过同声传译、交替传译和笔译连接世界。全球活动的高级质量。"
     },
     "about_us": {
         "subtitle": "关于我们",

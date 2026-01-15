@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { getDictionary } from "@/get-dictionary";
+import type { Locale } from "@/i18n-config";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,16 +31,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+
+
+export async function generateStaticParams() {
+  return [{ lang: 'pt' }, { lang: 'en' }, { lang: 'es' }, { lang: 'zh' }];
+}
+
+export default async function RootLayout(props: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const params = await props.params;
+  const dictionary = await getDictionary(params.lang);
+
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${outfit.variable}`}>
+    <html lang={params.lang} className={`${inter.variable} ${outfit.variable}`}>
       <body>
-        <LanguageProvider>
-          {children}
+        <LanguageProvider lang={params.lang} dictionary={dictionary}>
+          {props.children}
         </LanguageProvider>
       </body>
     </html>

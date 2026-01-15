@@ -1,47 +1,29 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
-import pt from "@/dictionaries/pt.json";
-import en from "@/dictionaries/en.json";
-import es from "@/dictionaries/es.json";
-import zh from "@/dictionaries/zh.json";
+import React, { createContext, useContext } from "react";
 
-type Dictionary = typeof pt;
+// Helper type for the dictionary structure. 
+// We can infer it from a default object or define it loosely if needed.
+// For now, we assume it's a flexible record or we could import one json just for typing if we want strong typing.
+// But simplest is 'any' or 'Record<string, any>' for the dictionary until we have a shared type.
+type Dictionary = any;
 type Lang = "pt" | "en" | "es" | "zh";
-
-const dictionaries: Record<Lang, Dictionary> = {
-    pt,
-    en,
-    es,
-    zh,
-};
 
 interface LanguageContextType {
     lang: Lang;
-    setLang: (lang: Lang) => void;
     t: (key: string) => any;
     dictionary: Dictionary;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-    const [lang, setLangState] = useState<Lang>("pt");
+interface LanguageProviderProps {
+    children: React.ReactNode;
+    lang: Lang;
+    dictionary: Dictionary;
+}
 
-    useEffect(() => {
-        // Load saved language from localStorage if available
-        const saved = localStorage.getItem("interpret-lang") as Lang;
-        if (saved && ["pt", "en", "es", "zh"].includes(saved)) {
-            setLangState(saved);
-        }
-    }, []);
-
-    const setLang = (newLang: Lang) => {
-        setLangState(newLang);
-        localStorage.setItem("interpret-lang", newLang);
-    };
-
-    const dictionary = dictionaries[lang];
+export function LanguageProvider({ children, lang, dictionary }: LanguageProviderProps) {
 
     // Helper to get nested values, e.g. "header.about"
     const t = (key: string) => {
@@ -58,7 +40,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     };
 
     return (
-        <LanguageContext.Provider value={{ lang, setLang, t, dictionary }}>
+        <LanguageContext.Provider value={{ lang, t, dictionary }}>
             {children}
         </LanguageContext.Provider>
     );
@@ -71,3 +53,4 @@ export function useLanguage() {
     }
     return context;
 }
+

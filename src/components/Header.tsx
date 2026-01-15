@@ -1,16 +1,20 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X, Globe, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { servicesData } from "@/lib/servicesData";
 import { useLanguage } from "@/context/LanguageContext";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
-    const { t, lang, setLang } = useLanguage();
+    const { t, lang } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
+    const router = useRouter();
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -18,28 +22,38 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const switchLanguage = (newLang: string) => {
+        if (!pathname) return;
+        const segments = pathname.split('/');
+        // segments[0] is empty, segments[1] is current lang (if valid) or first path
+        // My middleware ensures lang is present, so segments[1] should be the lang.
+        segments[1] = newLang;
+        const newPath = segments.join('/');
+        router.push(newPath);
+    };
+
     const menuItems = [
         {
             label: "TalkTube",
-            href: "/servicos/talktube",
+            href: `/${lang}/servicos/talktube`,
             highlight: true,
-            description: "Plataforma de Videoconferência com Tradução"
+            description: t("header.talktube_desc")
         },
         {
             label: t("header.services"),
-            href: "/servicos",
+            href: `/${lang}/servicos`,
             hasSubmenu: true,
             subItems: [
-                { label: t("header.services_simultaneous"), href: "/servicos/traducao-simultanea" },
-                { label: t("header.services_consecutive"), href: "/servicos/traducao-consecutiva" },
-                { label: t("header.services_remote"), href: "/servicos/interpretacao-remota" },
+                { label: t("header.services_simultaneous"), href: `/${lang}/servicos/traducao-simultanea` },
+                { label: t("header.services_consecutive"), href: `/${lang}/servicos/traducao-consecutiva` },
+                { label: t("header.services_remote"), href: `/${lang}/servicos/interpretacao-remota` },
             ]
         },
-        { label: t("header.services_sworn"), href: "/servicos/traducao-juramentada" },
-        { label: t("header.services_simple"), href: "/servicos/traducao-simples" },
-        { label: t("header.services_medical"), href: "/servicos/traducao-medica-e-farmaceutica" },
-        { label: t("header.services_technical"), href: "/servicos/traducao-tecnica" },
-        { label: t("header.services_equipment"), href: "/servicos/equipamentos-para-traducao-simultanea" },
+        { label: t("header.services_sworn"), href: `/${lang}/servicos/traducao-juramentada` },
+        { label: t("header.services_simple"), href: `/${lang}/servicos/traducao-simples` },
+        { label: t("header.services_medical"), href: `/${lang}/servicos/traducao-medica-e-farmaceutica` },
+        { label: t("header.services_technical"), href: `/${lang}/servicos/traducao-tecnica` },
+        { label: t("header.services_equipment"), href: `/${lang}/servicos/equipamentos-para-traducao-simultanea` },
     ];
 
     return (
@@ -49,23 +63,26 @@ export default function Header() {
         >
             <div className="container flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-1 group">
-                    <img
+                <Link href={`/${lang}`} className="flex items-center gap-1 group">
+                    <Image
                         src="/imagens/home/0_Interpret_Brasil.svg"
                         alt="Interpret Brasil Logo"
+                        width={170}
+                        height={48}
                         className="h-12 w-auto object-contain"
+                        priority
                     />
                 </Link>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8 h-full">
-                    <Link href="/a-interpret-brasil" className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors h-full flex items-center">
+                    <Link href={`/${lang}/a-interpret-brasil`} className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors h-full flex items-center">
                         {t("header.about")}
                     </Link>
 
                     {/* Dropdown Menu Trigger */}
                     <div className="group h-full flex items-center relative">
-                        <Link href="/servicos" className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors flex items-center gap-1 h-full py-6">
+                        <Link href={`/${lang}/servicos`} className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors flex items-center gap-1 h-full py-6">
                             {t("header.services")}
                         </Link>
 
@@ -84,7 +101,7 @@ export default function Header() {
                                             <span className="flex flex-col py-1">
                                                 <span className="flex items-center gap-2">
                                                     {item.label}
-                                                    <span className="bg-secondary text-white text-[9px] px-1.5 py-0.5 rounded-full uppercase tracking-widest">Novo</span>
+                                                    <span className="bg-secondary text-white text-[9px] px-1.5 py-0.5 rounded-full uppercase tracking-widest">{t("header.new")}</span>
                                                 </span>
                                                 <span className="text-[10px] font-normal opacity-90 uppercase tracking-wider mt-0.5">{(item as any).description}</span>
                                             </span>
@@ -113,10 +130,10 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <Link href="/noticias-artigos-traducao-interpretacao" className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors h-full flex items-center">
+                    <Link href={`/${lang}/noticias-artigos-traducao-interpretacao`} className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors h-full flex items-center">
                         {t("header.news")}
                     </Link>
-                    <Link href="/contato" className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors h-full flex items-center">
+                    <Link href={`/${lang}/contato`} className="text-sm font-bold text-gray-700 hover:text-secondary uppercase tracking-wide transition-colors h-full flex items-center">
                         {t("header.contact")}
                     </Link>
                 </nav>
@@ -125,35 +142,35 @@ export default function Header() {
                 <div className="hidden md:flex items-center gap-4">
                     <div className="flex items-center gap-3 border-r border-gray-200 pr-4 mr-1">
                         <button
-                            onClick={() => setLang('pt')}
+                            onClick={() => switchLanguage('pt')}
                             title="Português"
                             className={`hover:scale-110 transition-transform ${lang === 'pt' ? '' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`}
                         >
                             <img src="https://flagcdn.com/w40/br.png" alt="Português" className="w-6 h-auto rounded-sm shadow-sm" />
                         </button>
                         <button
-                            onClick={() => setLang('en')}
+                            onClick={() => switchLanguage('en')}
                             title="English"
                             className={`hover:scale-110 transition-transform ${lang === 'en' ? '' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`}
                         >
                             <img src="https://flagcdn.com/w40/us.png" alt="English" className="w-6 h-auto rounded-sm shadow-sm" />
                         </button>
                         <button
-                            onClick={() => setLang('es')}
+                            onClick={() => switchLanguage('es')}
                             title="Español"
                             className={`hover:scale-110 transition-transform ${lang === 'es' ? '' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`}
                         >
                             <img src="https://flagcdn.com/w40/es.png" alt="Español" className="w-6 h-auto rounded-sm shadow-sm" />
                         </button>
                         <button
-                            onClick={() => setLang('zh')}
+                            onClick={() => switchLanguage('zh')}
                             title="中文 (Chinese)"
                             className={`hover:scale-110 transition-transform ${lang === 'zh' ? '' : 'grayscale opacity-60 hover:grayscale-0 hover:opacity-100'}`}
                         >
                             <img src="https://flagcdn.com/w40/cn.png" alt="中文" className="w-6 h-auto rounded-sm shadow-sm" />
                         </button>
                     </div>
-                    <Link href="/contato" className="btn-primary py-2 px-6 text-xs uppercase shadow-none hover:shadow-lg">
+                    <Link href={`/${lang}/contato`} className="btn-primary py-2 px-6 text-xs uppercase shadow-none hover:shadow-lg">
                         {t("header.cta")}
                     </Link>
                 </div>
@@ -174,12 +191,12 @@ export default function Header() {
                         className="md:hidden bg-white border-t border-gray-100 overflow-hidden shadow-xl"
                     >
                         <nav className="flex flex-col p-6 space-y-4">
-                            <Link href="/a-interpret-brasil" className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.about")}</Link>
-                            <Link href="/servicos" className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.services")}</Link>
-                            <Link href="/noticias-artigos-traducao-interpretacao" className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.news")}</Link>
-                            <Link href="/contato" className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.contact")}</Link>
+                            <Link href={`/${lang}/a-interpret-brasil`} className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.about")}</Link>
+                            <Link href={`/${lang}/servicos`} className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.services")}</Link>
+                            <Link href={`/${lang}/noticias-artigos-traducao-interpretacao`} className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.news")}</Link>
+                            <Link href={`/${lang}/contato`} className="text-gray-700 font-bold uppercase" onClick={() => setIsOpen(false)}>{t("header.contact")}</Link>
                             <div className="pt-4 border-t border-gray-100">
-                                <Link href="/contato" className="btn-primary w-full justify-center" onClick={() => setIsOpen(false)}>
+                                <Link href={`/${lang}/contato`} className="btn-primary w-full justify-center" onClick={() => setIsOpen(false)}>
                                     {t("header.cta")}
                                 </Link>
                             </div>

@@ -19,7 +19,7 @@ interface HomePageContentProps {
 }
 
 export default function HomePageContent({ latestPosts }: HomePageContentProps) {
-    const { t } = useLanguage();
+    const { t, lang } = useLanguage();
 
     return (
         <div className="min-h-screen flex flex-col">
@@ -59,10 +59,10 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                                 </AnimateIn>
 
                                 <AnimateIn delay={0.4} className="flex flex-wrap gap-4">
-                                    <Link href="/contato" className="btn-primary text-lg px-8 py-4 shadow-xl shadow-secondary/20">
+                                    <Link href={`/${lang}/contato`} className="btn-primary text-lg px-8 py-4 shadow-xl shadow-secondary/20">
                                         {t("hero.cta_primary")}
                                     </Link>
-                                    <Link href="/servicos" className="btn-secondary text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-white">
+                                    <Link href={`/${lang}/servicos`} className="btn-secondary text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-white">
                                         {t("hero.cta_secondary")}
                                     </Link>
                                 </AnimateIn>
@@ -84,7 +84,7 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                                 {t("header.services")}
                             </span>
                             <h2 className="text-4xl md:text-5xl font-bold font-heading text-primary leading-tight">
-                                Soluções Completas em Idiomas
+                                {t("home.services_title")}
                             </h2>
                         </AnimateIn>
 
@@ -147,8 +147,8 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                                     </div>
                                 </div>
                                 <div className="mt-10">
-                                    <Link href="/a-interpret-brasil" className="btn-secondary">
-                                        Conheça Nossa História
+                                    <Link href={`/${lang}/a-interpret-brasil`} className="btn-secondary">
+                                        {t("home.history_cta")}
                                     </Link>
                                 </div>
                             </AnimateIn>
@@ -162,13 +162,13 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                     <div className="container relative z-10 text-center">
                         <AnimateIn>
                             <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6 max-w-3xl mx-auto leading-tight">
-                                Pronto para internacionalizar seu evento?
+                                {t("home.cta_title")}
                             </h2>
                             <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-                                Solicite um orçamento hoje mesmo e garanta a melhor comunicação para o seu negócio.
+                                {t("home.cta_text")}
                             </p>
-                            <Link href="/contato" className="inline-block bg-white text-primary font-bold text-lg px-10 py-4 rounded-full hover:bg-gray-100 hover:scale-105 transition-all shadow-lg">
-                                Falar com um Especialista
+                            <Link href={`/${lang}/contato`} className="inline-block bg-white text-primary font-bold text-lg px-10 py-4 rounded-full hover:bg-gray-100 hover:scale-105 transition-all shadow-lg">
+                                {t("home.cta_button")}
                             </Link>
                         </AnimateIn>
                     </div>
@@ -179,12 +179,12 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                     <div className="container">
                         <div className="flex justify-between items-end mb-12">
                             <AnimateIn>
-                                <span className="text-secondary font-bold tracking-wider uppercase text-sm mb-2 block">Blog</span>
-                                <h2 className="text-4xl font-bold font-heading text-primary">Últimas Novidades</h2>
+                                <span className="text-secondary font-bold tracking-wider uppercase text-sm mb-2 block">{t("home.blog_subtitle")}</span>
+                                <h2 className="text-4xl font-bold font-heading text-primary">{t("home.blog_title")}</h2>
                             </AnimateIn>
                             <AnimateIn delay={0.2} className="hidden md:block">
-                                <Link href="/noticias-artigos-traducao-interpretacao" className="text-primary font-bold hover:text-secondary flex items-center gap-2 transition-colors">
-                                    Ver todas as notícias <ArrowRight size={18} />
+                                <Link href={`/${lang}/noticias-artigos-traducao-interpretacao`} className="text-primary font-bold hover:text-secondary flex items-center gap-2 transition-colors">
+                                    {t("home.blog_view_all")} <ArrowRight size={18} />
                                 </Link>
                             </AnimateIn>
                         </div>
@@ -192,7 +192,7 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {latestPosts.map((post, index) => (
                                 <AnimateIn key={post.id} delay={index * 0.1}>
-                                    <Link href={`/noticias-artigos-traducao-interpretacao/${post.slug}`} className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all h-full flex flex-col">
+                                    <Link href={`/${lang}/noticias-artigos-traducao-interpretacao/${post.slug}`} className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all h-full flex flex-col">
                                         <div className="aspect-video bg-gray-200 relative overflow-hidden">
                                             {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ? (
                                                 <img
@@ -209,11 +209,11 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                                             <h3 className="text-xl font-bold font-heading text-primary mb-3 group-hover:text-secondary transition-colors"
                                                 dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                                             />
-                                            <p className="text-sm text-gray-500 line-clamp-3 mb-4"
+                                            <div className="text-sm text-gray-500 line-clamp-3 mb-4"
                                                 dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
                                             />
                                             <span className="mt-auto text-sm font-bold text-primary flex items-center gap-2 group-hover:gap-3 transition-all">
-                                                Ler mais <ArrowRight size={16} className="text-secondary" />
+                                                {t("common.read_more")} <ArrowRight size={16} className="text-secondary" />
                                             </span>
                                         </div>
                                     </Link>
@@ -222,8 +222,8 @@ export default function HomePageContent({ latestPosts }: HomePageContentProps) {
                         </div>
 
                         <div className="mt-12 text-center md:hidden">
-                            <Link href="/noticias-artigos-traducao-interpretacao" className="btn-secondary w-full justify-center">
-                                Ver todas as notícias
+                            <Link href={`/${lang}/noticias-artigos-traducao-interpretacao`} className="btn-secondary w-full justify-center">
+                                {t("home.blog_view_all")}
                             </Link>
                         </div>
                     </div>

@@ -39,15 +39,16 @@ export async function generateStaticParams() {
 
 export default async function RootLayout(props: {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }) {
   const params = await props.params;
-  const dictionary = await getDictionary(params.lang);
+  const lang = params.lang as Locale;
+  const dictionary = await getDictionary(lang);
 
   return (
-    <html lang={params.lang} className={`${inter.variable} ${outfit.variable}`}>
+    <html lang={lang} className={`${inter.variable} ${outfit.variable}`}>
       <body>
-        <LanguageProvider lang={params.lang} dictionary={dictionary}>
+        <LanguageProvider lang={lang} dictionary={dictionary}>
           {props.children}
         </LanguageProvider>
       </body>
